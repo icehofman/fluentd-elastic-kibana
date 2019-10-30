@@ -26,7 +26,6 @@ services:
     image: docker.elastic.co/elasticsearch/elasticsearch:7.2.0
     container_name: elasticsearch
     environment:
-      ENABLE_READONLY_REST: 'false'
       ES_JAVA_OPTS: -Xms512m -Xmx512m
       bootstrap.memory_lock: 'true'
       node.data: 'false'
